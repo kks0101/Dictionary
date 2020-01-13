@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name" : "Dictionary",
+	"version": "1.0",
+	"description": "An extension to see the meaning of any text on any web page",
+	
+	"background":{
+		"scripts": ["eventPage.js"],
+		"persistent": false
+	},
+	"permissions":[
+		"contextMenus"
+	]
+}
