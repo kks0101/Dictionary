@@ -9,6 +9,7 @@
 		"persistent": false
 	},
 	"permissions":[
-		"contextMenus"
+		"contextMenus",
+		"notifications"
 	]
 }
