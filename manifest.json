@@ -10,6 +10,21 @@
 	},
 	"permissions":[
 		"contextMenus",
-		"notifications"
+		"notifications",
+		"tabs",
+		"activeTab"
+	],
+
+	"content_scripts":[
+		{
+			"matches": ["<all_urls>"],
+			"css": ["modal.css"],
+			"js": ["jquery-3.4.1.min.js","contentscript.js"],
+			"run_at": "document_end"
+		}
+	],
+
+	"web_accessible_resources": [
+		"modal.html", "modal.js", "bootstrap.min.js", "bootstrap.min.css"
 	]
 }
