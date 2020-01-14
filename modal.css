@@ -14,11 +14,28 @@
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  position: relative;
+  background-color: #FEFEFE;
   margin: auto;
-  padding: 20px;
+  padding: 0;
   border: 1px solid #888;
-  width: 80%;
+  width: 50%;
+  font-size: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+   -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
 }
 
 /* The Close Button */
@@ -34,4 +51,18 @@
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+.modal-header h2{
+  color: white;
+  padding: 5px;
+  font-size: 40px;
+}
+.modal-header {
+  padding: 2px 16px;
+  background-color: #CC9090;
+  align-content: center;
+}
+.modal-body {padding: 2px 16px;}
+.modal-body p{
+  font-size: 20px;
 }
